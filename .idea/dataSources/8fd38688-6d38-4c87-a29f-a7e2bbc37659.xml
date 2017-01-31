@@ -9,7 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-01-31.13:17:26.505</IntrospectionTimestamp>
+      <IntrospectionTimestamp>2017-02-01.00:28:06.818</IntrospectionTimestamp>
+      <IntrospectionStateNumber>627</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -28,5 +29,42 @@
     <schema id="8" parent="2" name="information_schema">
       <ObjectId>12081</ObjectId>
     </schema>
+    <sequence id="9" parent="3" name="User_id_seq">
+      <ObjectId>16393</ObjectId>
+      <StateNumber>627</StateNumber>
+      <SequenceIdentity>1</SequenceIdentity>
+    </sequence>
+    <table id="10" parent="3" name="User">
+      <ObjectId>16395</ObjectId>
+      <StateNumber>627</StateNumber>
+    </table>
+    <column id="11" parent="10" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>627</StateNumber>
+      <DefaultExpression>nextval(&apos;&quot;User_id_seq&quot;&apos;::regclass)</DefaultExpression>
+    </column>
+    <column id="12" parent="10" name="name">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+      <StateNumber>627</StateNumber>
+    </column>
+    <column id="13" parent="10" name="old">
+      <Position>3</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>627</StateNumber>
+    </column>
+    <index id="14" parent="10" name="User_pkey">
+      <ObjectId>16399</ObjectId>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="15" parent="10" name="User_pkey">
+      <ObjectId>16400</ObjectId>
+      <ColNames>id</ColNames>
+      <UnderlyingIndexName>User_pkey</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
   </database-model>
 </dataSource>
